@@ -3,11 +3,10 @@ import globals from "globals";
 import stylisticJs from "@stylistic/eslint-plugin";
 
 export default [
-  // 1. የ dist ማህደርን እና የውቅር ፋይሉን ራሱ መዝለል
   {
     ignores: ["dist/**", "eslint.config.mjs"],
   },
-  // 2. ለውቅር ፋይሉ ራሱ (eslint.config.mjs) የሚሆን ልዩ ደንብ
+
   {
     files: ["eslint.config.mjs"],
     languageOptions: {
@@ -18,7 +17,7 @@ export default [
       },
     },
   },
-  // 3. ለቀቀሩት የپրጀክት ፋይሎችዎ የሚሆን ዋናው ውቅር
+
   {
     files: ["**/*.{js,mjs,cjs}"],
     ignores: ["eslint.config.mjs"],
